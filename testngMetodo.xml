@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite metodo">
+    
+<!--    <test verbose="2" preserve-order="true" name="C:/Users/Jeferson/IdeaProjects/testNG">-->
+    <test name="Teste do metodo">
+        <classes>
+            <class name="udemy.curso.testes.TestAnotacoes">
+                <methods>
+                    <include name="testMetodo2"></include>
+                </methods>
+            </class>
+            <class name="udemy.curso.testes.TestClasse">
+                <methods>
+                    <exclude name="teste1Classe2"></exclude>
+                    <exclude name="teste2Classe2"></exclude>
+                </methods>
+            </class>
+            <class name="udemy.curso.testesNovo.Pacote2Teste1">
+                <methods>
+                    <exclude name="pacote2.*"></exclude>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
