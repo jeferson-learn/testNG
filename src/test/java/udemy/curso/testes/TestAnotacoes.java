@@ -2,7 +2,7 @@ package udemy.curso.testes;
 
 import org.testng.annotations.*;
 
-public class Test1 {
+public class TestAnotacoes {
 
     @BeforeTest
     public void antesTeste() {
