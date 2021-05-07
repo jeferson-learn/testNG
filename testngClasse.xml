@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite classe">
+    
+<!--    <test verbose="2" preserve-order="true" name="C:/Users/Jeferson/IdeaProjects/testNG">-->
+    <test name="Teste do pacote testes">
+        <classes>
+            <class name="udemy.curso.testes.TestAnotacoes"></class>
+            <class name="udemy.curso.testes.TestClasse"></class>
+        </classes>
+    </test>
+
+</suite>
