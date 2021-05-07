@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite pacote">
+    
+    <test name="Teste do pacote 'testes'">
+        <packages>
+            <package name="udemy.curso.testes"></package>
+            <package name="udemy.curso.testesNovo"></package>
+        </packages>
+    </test>
+
+</suite>
