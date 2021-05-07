@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/Jeferson/IdeaProjects/testNG">
-        <classes>
-            <class name="udemy.curso.testes.TestAnotacoes"></class>
-        </classes>
-    </test>
+<suite name="Suite GERAL">
+
+    <suite-files>
+        <suite-file path="testng2.xml"></suite-file>
+        <suite-file path="testng3.xml"></suite-file>
+    </suite-files>
+
 </suite>
