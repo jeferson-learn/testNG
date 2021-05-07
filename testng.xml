@@ -3,8 +3,8 @@
 <suite name="Suite GERAL">
 
     <suite-files>
-        <suite-file path="testng2.xml"></suite-file>
-        <suite-file path="testng3.xml"></suite-file>
+        <suite-file path="testngPacote.xml"></suite-file>
+        <suite-file path="testngClasse.xml"></suite-file>
     </suite-files>
 
 </suite>
