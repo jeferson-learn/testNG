@@ -2,6 +2,7 @@ package udemy.curso.testes;
 
 import org.testng.annotations.*;
 
+@Test(groups = "teste-anotacao")
 public class TestAnotacoes {
 
     @BeforeTest
@@ -47,7 +48,7 @@ public class TestAnotacoes {
 
     @Test(groups = "lateral")
     public void testMetodo6() {
-        System.out.print("Esse é teste metodo 6");
+        System.out.print("Esse é teste metodo 6 L");
     }
 
     @Test(groups = "impar")
