@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Jeferson/IdeaProjects/testNG">
         <classes>
-            <class name="udemy.curso.testes.Test1"></class>
+            <class name="udemy.curso.testes.TestAnotacoes"></class>
         </classes>
     </test>
 </suite>
