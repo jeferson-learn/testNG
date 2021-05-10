@@ -1,14 +1,16 @@
 package udemy.curso.testesRetorno;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 @Test(groups = {"testes-retorno","testes-unitarios"})
 public class TesteRetorno {
 
+    @Parameters("saudacao")
     @Test(groups = {"retorno","unitario"})
-    public String saudacao() {
-        System.out.println("Bom dia");
-        return "Bom dia";
+    public String saudacao(String saudacao) {
+        System.out.println(saudacao);
+        return saudacao;
     }
 
     @Test(groups = {"booleano","integracao"})
@@ -20,7 +22,6 @@ public class TesteRetorno {
     @Test(groups = {"void","unitario"})
     public void teste3ClasseRetorno() {
         System.out.println("Teste void classe de retorno");
-        System.out.println(saudacao());
     }
 
     @Test(groups = {"void","unitario"})
