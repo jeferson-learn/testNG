@@ -1,17 +1,39 @@
 package udemy.curso.testesNovo;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 @Test(groups = "testes-integracao")
 public class Pacote2Teste1 {
 
-    @Test(groups = "integracao")
-    public void pacote2Teste1() {
-        System.out.println("Primeira teste da classe 1 do pacote 2 I");
+    @Parameters("nome")
+    @BeforeClass
+    public void nomeClass(String nome) {
+        System.out.println(nome);
     }
-    @Test(groups = "unitario")
-    public void pacote2Teste2() {
+
+    @Parameters("nome")
+    @BeforeMethod
+    public void nomeMethod(String nome) {
+        System.out.println(nome);
+    }
+
+    @Parameters("nome")
+    @BeforeTest
+    public void nome(String nome) {
+        System.out.println(nome);
+    }
+
+    @Parameters("nome")
+    @Test
+    public void pacote2Teste1(@Optional String nome) {
+        System.out.println("Primeira teste da classe 1 do pacote 2 I");
+        System.out.println(nome);
+    }
+    @Parameters("sobrenome")
+    @Test
+    public void pacote2Teste2(@Optional String sobrenome) {
         System.out.println("Segunda teste da classe 1 do pacote 2 U");
+        System.out.println(sobrenome);
     }
     @Test(groups = "integracao")
     public void pacote2Teste3() {
