@@ -2,7 +2,7 @@ package udemy.curso.testesNovo;
 
 import org.testng.annotations.Test;
 
-@Test(groups = "teste-ordem")
+@Test(groups = "testes-integracao")
 public class Pacote2Teste1 {
 
     @Test(groups = "integracao")
