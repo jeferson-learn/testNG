@@ -3,7 +3,7 @@ package udemy.curso.testes;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-@Test(groups = "teste-classe")
+@Test(groups = "testes-unitarios")
 public class TestClasse {
 
     @BeforeClass

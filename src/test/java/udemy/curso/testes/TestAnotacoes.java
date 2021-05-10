@@ -2,7 +2,7 @@ package udemy.curso.testes;
 
 import org.testng.annotations.*;
 
-@Test(groups = "teste-anotacao")
+@Test(groups = "testes-funcionais")
 public class TestAnotacoes {
 
     @BeforeTest
