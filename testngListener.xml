@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Parametrizado" parallel="false" verbose="1" allow-return-values="true">
+
+    <listeners>
+        <listener class-name="udemy.curso.listener.TestesListener"></listener>
+    </listeners>
+    
+    <test name="Testes Listener">
+        <classes>
+            <class name="udemy.curso.testes.TestClasse"></class>
+        </classes>
+    </test>
+
+</suite>
