@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Agrupada" parallel="false" verbose="10" allow-return-values="true">
+
+    <test name="Regressao">
+        <groups>
+
+            <define name="testes-normais ">
+                <include name="testes-unitarios"></include>
+            </define>
+
+            <define name="outros-testes">
+                <include name=".*funcionais"></include>
+                <include name=".*integracao"></include>
+            </define>
+
+            <define name="todos-testes">
+                <include name="testes-normais"></include>
+                <include name="outros-testes"></include>
+            </define>
+
+            <run>
+                <include name="todos-testes"></include>
+            </run>
+
+        </groups>
+
+        <packages>
+            <package name="udemy.*"></package>
+        </packages>
+
+    </test>
+</suite>
