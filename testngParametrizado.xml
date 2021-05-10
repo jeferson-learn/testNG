@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Parametrizado" parallel="false" verbose="10" allow-return-values="true">
+
+    <parameter name="nome" value="Erick"></parameter>
+    <parameter name="sobrenome" value="Santos"></parameter>
+    <parameter name="cor" value="Vermelho"></parameter>
+    <parameter name="saudacao" value="Boa noite"></parameter>
+
+    <test name="Testes Parametrizados">
+<!--        <parameter name="nome" value="Erick"></parameter>-->
+<!--        <parameter name="sobrenome" value="Santos"></parameter>-->
+<!--        <parameter name="cor" value="Vermelho"></parameter>-->
+<!--        <parameter name="saudacao" value="Boa noite"></parameter>-->
+        <packages>
+            <package name="udemy.curso.testesParametrizados"></package>
+            <package name="udemy.curso.testesRetorno"></package>
+        </packages>
+
+    </test>
+    
+    <test name="Testes Parametrizados 2">
+        <packages>
+            <package name="udemy.curso.testesNovo"></package>
+        </packages>
+    </test>
+
+</suite>
